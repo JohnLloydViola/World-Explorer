@@ -1,0 +1,13 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+@font-face {
+  src: url('./font/NunitoSans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+  font-family: 'NunitoSans';
+
+}
+body {
+  font-family: 'NunitoSans', sans-serif;
+}
