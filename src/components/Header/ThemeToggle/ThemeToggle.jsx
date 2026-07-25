@@ -1,4 +1,4 @@
-import DarkModeImage from '../../assets/images/dark-mode-icon.png' 
+import DarkModeImage from '../../../assets/images/dark-mode-icon.png'
 import style from './ThemeToggle.module.css'
 
 function ThemeToggle() {

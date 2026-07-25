@@ -1,4 +1,4 @@
-import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import ThemeToggle from './ThemeToggle/ThemeToggle';
 import style from './Header.module.css'
 
 function Header() {

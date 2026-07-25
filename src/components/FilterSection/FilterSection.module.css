@@ -1,0 +1,26 @@
+.container {
+  margin: 25px 50px;
+}
+
+.container > div {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputContainer {
+  position:relative;
+}
+
+.inputImage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+input {
+  width: 35ch;
+  padding: 5px 50px;
+}

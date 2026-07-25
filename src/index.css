@@ -10,6 +10,9 @@
   --background: hsl(0, 0%, 99%);      /* Light Mode Background */
 }
 
+.darkMode {
+  
+}
 
 @font-face {
   src: url('./font/NunitoSans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
