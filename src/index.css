@@ -3,6 +3,14 @@
   padding:0;
   box-sizing:border-box;
 }
+
+:root {
+  --text-color: hsl(200, 15%, 8%);   /* Light Mode Text */
+  --input-color: hsl(0, 0%, 50%);     /* Light Mode Input */
+  --background: hsl(0, 0%, 99%);      /* Light Mode Background */
+}
+
+
 @font-face {
   src: url('./font/NunitoSans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
   font-family: 'NunitoSans';
