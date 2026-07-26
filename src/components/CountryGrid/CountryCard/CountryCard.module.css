@@ -1,0 +1,14 @@
+.cardContainer {
+  border: 1px solid red;
+  width:100%;
+}
+
+.cardContainer img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.description {
+  padding: 25px;
+}
