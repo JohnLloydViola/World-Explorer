@@ -25,12 +25,9 @@ function CountryGrid() {
 
   return(
     <div className={style.container}>
-
       {data.map( (country)=> 
         <CountryCard key={country.name} country = {country}/>
-      )
-
-      }
+      )}
       
     </div>
   );

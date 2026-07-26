@@ -5,8 +5,9 @@
 
 .cardContainer img{
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: 200px;
+  
+
 }
 
 .description {
