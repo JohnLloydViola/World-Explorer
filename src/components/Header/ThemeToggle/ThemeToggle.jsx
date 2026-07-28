@@ -1,10 +1,17 @@
 import DarkModeImage from '../../../assets/images/dark-mode-icon.png'
 import style from './ThemeToggle.module.css'
 
-function ThemeToggle() {
+function ThemeToggle({setIsDarkMode}) {
+
+  function toggleMode() {
+    setIsDarkMode(prev => !prev);
+  }
+
+
+
   return(
     <div>
-      <button>
+      <button onClick={toggleMode}>
         <img src={DarkModeImage} alt='Dark Mode Icon'/>
         <p>Dark Mode</p>
       </button>

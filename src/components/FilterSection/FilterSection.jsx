@@ -1,11 +1,8 @@
 import style from './FilterSection.module.css'
 import SearchIcon from '../../assets/images/SearchIcon.png'
 import FilterBy from './FilterBy/FilterBy'
-import {useState} from 'react'
 
-function FilterSection() {
-  const [input, setInput] = useState('');
-  const [selectedRegion, setSelectedRegion] = useState('Filter By Region');
+function FilterSection({input, setInput, selectedRegion, setSelectedRegion}) {
 
   function inputHandler(event) {
     setInput(event.target.value )

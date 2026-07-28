@@ -1,9 +1,9 @@
 .container {
   margin: 25px 200px;
+  
 }
 
 .container > div {
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,5 +22,17 @@
 
 input {
   width: 35ch;
-  padding: 5px 50px;
+  padding: 10px 50px;
+  background-color: var(--color-bg-element);
+  color: var(--text-color);
+  border:none;
+  box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.11);
+}
+
+input:focus {
+  outline:none;
+}
+
+::placeholder {
+  color:var(--text-color);
 }

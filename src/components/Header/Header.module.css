@@ -1,9 +1,10 @@
 .container {
-  border-bottom: 1px solid black;
   display:flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 200px;
+  background-color: var(--color-bg-element);
+  box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.11);
 }
 
 .title {

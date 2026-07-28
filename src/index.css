@@ -7,11 +7,16 @@
 :root {
   --text-color: hsl(200, 15%, 8%);   /* Light Mode Text */
   --input-color: hsl(0, 0%, 50%);     /* Light Mode Input */
-  --background: hsl(0, 0%, 99%);      /* Light Mode Background */
+  --body-background: hsl(0, 0%, 99%);  
+  --color-element: hsl(0, 100%, 100%);  
+  --color-bg-element: white;
+  
 }
 
 .darkMode {
-  
+  --text-color: hsl(0, 100%, 100%);
+  --body-background: hsl(207, 26%, 17%);
+  --color-bg-element: hsl(209, 23%, 22%);
 }
 
 @font-face {
@@ -21,4 +26,5 @@
 }
 body {
   font-family: 'NunitoSans', sans-serif;
+  background-color: var(--body-background);
 }
