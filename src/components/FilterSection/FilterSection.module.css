@@ -13,11 +13,12 @@
   position:relative;
 }
 
-.inputImage {
+.searchImage {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 10px;
+  filter: var(--brightness-level);
 }
 
 input {

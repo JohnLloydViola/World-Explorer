@@ -7,12 +7,10 @@ function ThemeToggle({setIsDarkMode}) {
     setIsDarkMode(prev => !prev);
   }
 
-
-
   return(
     <div>
       <button onClick={toggleMode}>
-        <img src={DarkModeImage} alt='Dark Mode Icon'/>
+        <img className={style.darkModeImage} src={DarkModeImage} alt='Dark Mode Icon'/>
         <p>Dark Mode</p>
       </button>
     </div>
