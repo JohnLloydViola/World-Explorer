@@ -1,7 +1,8 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import RootLayout from "../layout/RootLayout";
 import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
+import CountryDetailsPage from "../pages/CountryDetailsPage";
 
 const router = createBrowserRouter([
   {
@@ -10,13 +11,21 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />
+        element: <HomePage />,
+      },
+      {
+        path: 'country-details/:countryCode',
+        element: <CountryDetailsPage />,
       },
     ],
   },
   {
-    path: '*',
+    path: '/404',
     element: <NotFoundPage />
+  },
+  {
+    path: '*',
+    element: <Navigate to="/404" replace />,
   },
 ]);
 

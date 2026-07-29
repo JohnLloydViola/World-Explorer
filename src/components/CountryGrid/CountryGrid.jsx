@@ -1,11 +1,13 @@
 import style from './CountryGrid.module.css'
 import CountryCard from './CountryCard/CountryCard';
 import {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
 
 function CountryGrid({input, selectedRegion}) {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect( () => {
+  useEffect(() => {
     async function fetchCountries() {
       try {
         const response = await fetch('/data/CountryData.json');
@@ -14,6 +16,7 @@ function CountryGrid({input, selectedRegion}) {
         }
         const data = await response.json();
         setData(data);
+        setLoading(false);
 
       } catch (error) {
         console.log(error);
@@ -35,15 +38,26 @@ function CountryGrid({input, selectedRegion}) {
   });
 
   return(
+  
     <div className={style.container}>
-      {filteredCountries.length === 0 ? (
+
+      { loading ? ("Loading") :
+      (
+        filteredCountries.length === 0 ? (
         <p>No countries found.</p>
-      ) : (
-        filteredCountries.map( (country) => 
-          <CountryCard key={country.name} country={country} />
+        ) : (
+          filteredCountries.map((country) => 
+            <>
+            <Link className={style.linkStyle} key={country.name} to={`/country-details/${country.alpha3Code}`}>
+              <CountryCard country={country} />
+            </Link>
+            </>
+          )
         )
       )
+
       }
+      
     </div>
   );
 

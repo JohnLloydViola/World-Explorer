@@ -12,7 +12,7 @@ function HomePage() {
       setInput={setInput} 
       selectedRegion={selectedRegion} 
       setSelectedRegion={setSelectedRegion} />
-
+      
       <CountryGrid input={input} selectedRegion={selectedRegion} />
     </>
 

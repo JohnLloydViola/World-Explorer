@@ -1,0 +1,25 @@
+.container {
+  border:1px solid black;
+  display: flex;
+  margin: 0 200px;
+}
+
+.countryTitle {
+  margin-bottom: 20px;
+}
+
+.borderCountries {
+  margin-top: 50px;
+}
+
+.informationContainer {
+  display:flex;
+  gap: 250px;
+
+}
+
+.linkStyle {
+  text-decoration: none;
+  display:block;
+  margin: 50px 200px;
+}
