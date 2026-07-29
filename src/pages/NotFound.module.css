@@ -2,4 +2,19 @@
   width: 50%;
   margin: 300px auto;
   text-align: center;
+  color:var(--text-color);
+  line-height: 1.8;
+}
+
+.linkStyle {
+  text-decoration: none;
+  display:block;
+  margin: 5px auto;
+  color: var(--text-color);
+  box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.11);
+  background-color: var(--color-bg-element);
+  border-radius: var(--border-radius);
+  padding: 7px;
+  width: 105px;
+  font-size: 14px;
 }

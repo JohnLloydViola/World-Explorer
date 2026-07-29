@@ -3,6 +3,9 @@
   background-color: var(--color-element);
   cursor:pointer;
   box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.11);
+  background-color: var(--color-bg-element);
+  border-radius: var(--border-radius);
+  overflow:hidden;
 }
 
 .cardContainer img{
@@ -10,7 +13,11 @@
   height: 200px;
 
 }
+.countryName {
+  margin-bottom: 15px;
+}
 
 .description {
   padding: 25px;
+  line-height: 1.6;
 }

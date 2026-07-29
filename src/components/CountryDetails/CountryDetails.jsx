@@ -1,17 +1,20 @@
 import {Link} from 'react-router-dom'
 import style from './CountryDetails.module.css'
+import arrowBack from '../../assets/images/arrowBack.png'
 
 function CountryDetails({country}) {
   return(
     <>
-    <Link className={style.linkStyle} to={'/'}>Back</Link>
+    <Link className={style.linkStyle} to={'/'}><img className={style.arrowImage} src={arrowBack}></img>Back</Link>
 
     <div className={style.container}>
-      <div>
-        <img src={country.flags.png} ></img>
+      
+      <div className={style.imageSection}>
+        <img className={style.countryImage} src={country.flags.png} ></img>
       </div>
 
-      <div>
+      <div className={style.informationSection}>
+
         <h1 className={style.countryTitle}>{country.name}</h1>
         <div className={style.informationContainer}>
 
@@ -23,7 +26,7 @@ function CountryDetails({country}) {
               <p>Capital: {country.capital || "none"}</p>
           </div>
 
-          <div>
+          <div className={style.secondSectionText} >
             <p>Top Level Domain: {country.topLevelDomain}</p>
             <p>Currencies: {country.currencies[0].name}</p>
             <p>Languages: {country.languages.map((languages) => languages.name).join(", ")}</p>

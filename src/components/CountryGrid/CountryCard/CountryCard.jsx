@@ -5,7 +5,7 @@ function CountryCard({country}) {
     <div className={style.cardContainer}>
       <img src={country.flags.png} alt={`${country.name} flag`}></img>
       <div className={style.description}>
-        <p>{country.name}</p>
+        <p className={style.countryName} >{country.name}</p>
         <p>Population: {country.population.toLocaleString()} </p>
         <p>Region: {country.region}</p>
         <p>Capital: {country.capital || 'none'} </p>

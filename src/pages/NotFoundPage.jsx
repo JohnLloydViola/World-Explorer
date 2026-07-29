@@ -5,8 +5,8 @@ function NotFoundPage() {
   return(
     <div className={style.container}>
       <p>Error 404</p>
-      <p>Page you are looking for doesn't exist.</p>
-      <Link to={'/'}>Go back</Link>
+      <p>The page you are looking for doesn't exist.</p>
+      <Link className={style.linkStyle} to={'/'}>Go back</Link>
     </div>
     
   );
