@@ -8,7 +8,6 @@ function FilterBy({selectedRegion, setSelectedRegion}) {
 
   return(
     <div>
-
       <select value={selectedRegion} onChange={handleSelectChange}>
         <option value=''>All</option>
         <option value='Africa'>Africa</option>

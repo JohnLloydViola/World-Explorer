@@ -1,6 +1,5 @@
 .container {
-  margin: 25px 200px;
-  
+  margin: 2.3rem 12.5rem;
 }
 
 .container > div {
@@ -17,18 +16,20 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 10px;
+  left: 0.625rem;
   filter: var(--brightness-level);
+  height: 1.8rem;
 }
 
 input {
   width: 35ch;
-  padding: 10px 50px;
+  padding: 0.825rem 3.125rem;
   background-color: var(--color-bg-element);
   color: var(--text-color);
   border:none;
   box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.11);
   border-radius: var(--border-radius);
+  font-size: 1rem;
 }
 
 input:focus {
@@ -37,4 +38,38 @@ input:focus {
 
 ::placeholder {
   color:var(--text-color);
+}
+
+@media (max-width: 1440px) {
+  .container {
+    margin: 1.563rem 6.25rem;
+  }
+}
+
+@media(max-width: 1179px){
+  .container {
+    margin: 1.563rem 7.75rem;
+  }
+}
+
+@media(max-width:1024px) {
+   .container {
+    margin: 1.563rem 3.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 1.7rem 2.75rem;
+  }
+}
+
+@media(max-width: 480px){
+  .container {
+    margin: 1.7rem 0.95rem;
+    
+  }
+  input {
+    width:28ch;
+  }
 }

@@ -1,8 +1,8 @@
 button {
   display:flex;
   align-items: center;
-  gap: 5px;
-  font-size: 15px;
+  gap: 0.313rem;
+  font-size: 0.938rem;
   color: var(--text-color);
   font-weight:500;
   cursor:pointer;
@@ -12,5 +12,6 @@ button {
 }
 .darkModeImage{
   filter: var(--brightness-level);
+  height: 1.8rem;
 }
 

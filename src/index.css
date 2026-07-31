@@ -31,3 +31,67 @@ body {
   font-family: 'NunitoSans', sans-serif;
   background-color: var(--body-background);
 }
+
+@media(max-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+
+}
+
+@media(max-width: 1179px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 1024px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media(max-width: 850px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 500px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media(max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 421px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 357px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media(max-width: 303px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+
+

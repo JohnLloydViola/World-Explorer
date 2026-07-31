@@ -55,9 +55,7 @@ function CountryGrid({input, selectedRegion}) {
           )
         )
       )
-
       }
-      
     </div>
   );
 

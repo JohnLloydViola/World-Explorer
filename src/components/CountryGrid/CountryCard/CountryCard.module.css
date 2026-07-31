@@ -6,18 +6,57 @@
   background-color: var(--color-bg-element);
   border-radius: var(--border-radius);
   overflow:hidden;
+  height:26.875rem;
 }
 
 .cardContainer img{
   width: 100%;
-  height: 200px;
-
+  height: 12.5rem;
 }
 .countryName {
-  margin-bottom: 15px;
+  margin-bottom: 0.938rem;
 }
 
 .description {
-  padding: 25px;
+  padding: 1.563rem;
   line-height: 1.6;
+}
+
+@media (max-width: 1440px) {
+ .cardContainer {
+    height:25rem;
+ }
+}
+
+@media (max-width: 1179px){
+  .cardContainer {
+    height:25.625rem;
+  }
+  .description {
+    padding: 1.25rem;
+  }
+}
+
+@media(max-width:1024px) {
+  .cardContainer {
+    height:24.625rem;
+  }
+}
+
+@media(max-width:850px){
+  .cardContainer {
+    height:25.625rem;
+  }
+}
+
+@media(max-width: 768px){
+  .cardContainer {
+    height:28.625rem;
+  }
+  .cardContainer img{
+    height: 16rem;
+  }
+  .description {
+    padding: 2.25rem;
+  }
 }
