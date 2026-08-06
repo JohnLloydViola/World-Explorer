@@ -1,6 +1,6 @@
 # This is a website that lets you search your country and find various informations on it.
 
-# React + Vite Project
+## React + Vite Project
 A React application built with Vite.
 
 ## Prerequisites
