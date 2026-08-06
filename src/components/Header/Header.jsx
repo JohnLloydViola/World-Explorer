@@ -3,7 +3,6 @@ import style from './Header.module.css'
 import {useState, useEffect} from 'react'
 
 function Header() {
-
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.getItem('mode') === 'true'
   );
@@ -18,18 +17,15 @@ function Header() {
     }
   }, [isDarkMode]);
 
-
-
   return(
-    <div className={style.container} >
+    <div className={style.container}>
       <div>
-        <h1 className={style.title} >Where in the world?</h1>
+        <h1 className={style.title}>Where in the world?</h1>
       </div>
+
       <ThemeToggle setIsDarkMode={setIsDarkMode} />
     </div>
   );
-
-
 }
 
 export default Header;

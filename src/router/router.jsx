@@ -28,5 +28,4 @@ const router = createBrowserRouter([
     element: <Navigate to="/404" replace />,
   },
 ]);
-
 export default router;

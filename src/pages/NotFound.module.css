@@ -1,20 +1,21 @@
+
 .container {
   width: 50%;
-  margin: 300px auto;
+  margin: 18.75rem auto;
   text-align: center;
   color:var(--text-color);
-  line-height: 1.8;
+  line-height: 2.3;
 }
 
 .linkStyle {
   text-decoration: none;
   display:block;
-  margin: 5px auto;
+  margin: 0.313rem auto;
   color: var(--text-color);
   box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.11);
   background-color: var(--color-bg-element);
   border-radius: var(--border-radius);
-  padding: 7px;
-  width: 105px;
-  font-size: 14px;
+  padding: 0.438rem;
+  width: 6.563rem;
+  font-size: 0.875rem;
 }

@@ -11,15 +11,17 @@ function CountryDetailsPage() {
 
   useEffect( () => {
     async function fetchCountries() {
+
       try {
         const response = await fetch('/data/CountryData.json');
+
         if(!response.ok) {
           throw new Error('Failed to load data');
         }
+
         const data = await response.json();
         setData(data);
         setLoading(false);
-
       } catch (error) {
         console.log(error);
       }
@@ -40,6 +42,5 @@ function CountryDetailsPage() {
   }
  
   return <CountryDetails country={country} />
-     
 }
 export default CountryDetailsPage;

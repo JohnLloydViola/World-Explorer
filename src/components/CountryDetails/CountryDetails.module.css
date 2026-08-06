@@ -33,7 +33,6 @@
   
 }
 
-
 .linkStyle {
   text-decoration: none;
   display:block;
@@ -53,4 +52,100 @@
 
 .arrowImage {
   filter: var(--brightness-level);
+}
+
+@media (max-width: 1440px) {
+  .container {
+    margin: 0 6.5rem;
+  }
+
+  .linkStyle {
+    margin: 3.125rem 6.5rem;
+  }
+
+  .informationSection {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1179px) {
+  .container {
+    margin: 0 7.5rem;
+  }
+
+  .linkStyle {
+    margin: 3.125rem 7.5rem;
+  }
+
+  .informationSection {
+    width: 50%;
+  
+  }
+  .informationContainer {
+    gap: 6.375rem;
+  }
+}
+
+@media(max-width:1024px) {
+  .container {
+    margin: 0 3.5rem;
+  }
+
+  .linkStyle {
+    margin: 3.125rem 3.5rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .imageSection {
+    width:100%;
+  
+  }
+  .informationSection {
+    width:100%;
+  }
+}
+
+@media(max-width:600px){
+  .container {
+    margin: 0 2.5rem;
+  }
+
+  .linkStyle {
+    margin: 3.125rem 2.5rem;
+  }
+}
+
+@media(max-width: 480px) {
+    .container {
+    margin: 0 0.9rem;
+  }
+
+  .linkStyle {
+    margin: 3.125rem 0.9rem;
+  }
+
+  .informationContainer {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .countryTitle {
+    margin: 2.5rem 0;
+  }
+
+  .borderCountries {
+    margin: 2.5rem 0;
+  }
+  .linkStyle {
+    margin: 2.125rem 0.9rem 3.5rem 0.9rem;
+  }
+
+  .countryImage {
+    width:94%;
+  }
+
 }

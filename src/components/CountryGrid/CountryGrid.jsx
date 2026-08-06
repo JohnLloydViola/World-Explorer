@@ -11,10 +11,13 @@ function CountryGrid({input, selectedRegion}) {
     async function fetchCountries() {
       try {
         const response = await fetch('/data/CountryData.json');
+
         if(!response.ok) {
           throw new Error('failed to load data');
         }
+
         const data = await response.json();
+
         setData(data);
         setLoading(false);
 
@@ -36,7 +39,6 @@ function CountryGrid({input, selectedRegion}) {
 
       return matchSearch && matchRegion;
   });
-
   return(
   
     <div className={style.container}>
